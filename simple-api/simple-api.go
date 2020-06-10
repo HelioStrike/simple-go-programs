@@ -31,7 +31,7 @@ func main() {
 
 	http.HandleFunc("/", handler)
 
-	fmt.Printf("Starting server on %d...\n", port)
+	log.Printf("Starting server on port %d...\n", port)
 	if err := http.ListenAndServe(fmt.Sprintf(":%d", port), nil); err != nil {
 		log.Fatal(err)
 	}
