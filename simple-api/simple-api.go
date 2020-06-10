@@ -27,7 +27,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	var port = 8080
+	port := 8080
 
 	http.HandleFunc("/", handler)
 
